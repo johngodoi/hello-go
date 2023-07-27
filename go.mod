@@ -1,5 +1,8 @@
-module hello
+module Hello
 
 go 1.15
 
-require github.com/revel/cmd v1.1.2 // indirect
+require (
+	github.com/revel/modules v1.1.0
+	github.com/revel/revel v1.1.0
+)
