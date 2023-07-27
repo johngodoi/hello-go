@@ -1,0 +1,1 @@
+create table if not exists coins (name char(40), description char(120));

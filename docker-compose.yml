@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - ./scripts/sql/coins.sql:/docker-entrypoint-initdb.d/coins.sql
+    environment:
+      POSTGRES_PASSWORD: "gogo"
+    ports:
+      - "5432:5432"
